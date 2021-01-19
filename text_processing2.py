@@ -19,5 +19,5 @@ def to_camel_case(underscore_str):
         if i == 0:
             camelcase_str += res[i]
         else:
-            camelcase_str += res[i].captialize()
+            camelcase_str += res[i].capitalize()
     return camelcase_str
