@@ -12,6 +12,8 @@ def digits_to_words(input_string):
     return ' '.join(digit_string)
 
 def to_camel_case(underscore_str):
+    if '_' not in underscore_str:
+        return underscore_str
     res = underscore_str.rstrip('_').lstrip('_').split('_')
     camelcase_str = ''
     for i in range(len(res)):
